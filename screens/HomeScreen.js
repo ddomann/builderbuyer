@@ -9,6 +9,7 @@ import {
   View,
 } from 'react-native';
 import { WebBrowser } from 'expo';
+import Colors from '../constants/Colors';
 
 import { MonoText } from '../components/StyledText';
 
@@ -99,9 +100,8 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#c00',
+    backgroundColor: '#fff',
     paddingTop:20,
-    color:'#fff',
   },
   developmentModeText: {
     marginBottom: 20,
@@ -109,8 +109,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 19,
     textAlign: 'center',
-    color:'#fff',
-
   },
   contentContainer: {
     paddingTop: 30,
@@ -135,7 +133,9 @@ const styles = StyleSheet.create({
     marginVertical: 7,
   },
   codeHighlightText: {
-    color: 'rgba(96,100,109, 0.8)',
+    //color: 'rgba(96,100,109, 0.8)',
+    color:Colors.accentColor,
+
   },
   codeHighlightContainer: {
     backgroundColor: 'rgba(0,0,0,0.05)',
@@ -147,8 +147,6 @@ const styles = StyleSheet.create({
     color: 'rgba(96,100,109, 1)',
     lineHeight: 24,
     textAlign: 'center',
-    color:'#fff',
-
   },
   tabBarInfoContainer: {
     position: 'absolute',
@@ -174,8 +172,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
     color: 'rgba(96,100,109, 1)',
     textAlign: 'center',
-    color:'#fff',
-
+    color:Colors.accentColor,
   },
   navigationFilename: {
     marginTop: 5,
@@ -190,7 +187,5 @@ const styles = StyleSheet.create({
   helpLinkText: {
     fontSize: 14,
     color: '#2e78b7',
-    color:'#fff',
-
   },
 });
