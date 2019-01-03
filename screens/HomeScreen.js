@@ -99,7 +99,9 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#c00',
+    paddingTop:20,
+    color:'#fff',
   },
   developmentModeText: {
     marginBottom: 20,
@@ -107,6 +109,8 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 19,
     textAlign: 'center',
+    color:'#fff',
+
   },
   contentContainer: {
     paddingTop: 30,
@@ -143,6 +147,8 @@ const styles = StyleSheet.create({
     color: 'rgba(96,100,109, 1)',
     lineHeight: 24,
     textAlign: 'center',
+    color:'#fff',
+
   },
   tabBarInfoContainer: {
     position: 'absolute',
@@ -168,6 +174,8 @@ const styles = StyleSheet.create({
     fontSize: 17,
     color: 'rgba(96,100,109, 1)',
     textAlign: 'center',
+    color:'#fff',
+
   },
   navigationFilename: {
     marginTop: 5,
@@ -182,5 +190,7 @@ const styles = StyleSheet.create({
   helpLinkText: {
     fontSize: 14,
     color: '#2e78b7',
+    color:'#fff',
+
   },
 });
